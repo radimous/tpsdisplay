@@ -12,7 +12,7 @@ public class Config {
         ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 
         showList = BUILDER
-            .comment("uuid of that want to see the TPS display - use /tpsdisplay enable to add yourself")
+            .comment("uuid of players that want to see the TPS display - use /tpsdisplay enable to add yourself")
             .defineList("showList", new ArrayList<>(), entry -> true);
         SPEC = BUILDER.build();
 
